@@ -31,12 +31,12 @@ $(document).ready(function(){
 	}
 	
 	// First time, check the locale
-	let userLang = navigator.language || navigator.userLanguage;
-	if(localStorage.getItem("lan") === null){
-		localStorage.lan = "en";
-		if (userLang.split('-')[0] == "es")
-			localStorage.lan = "es";
-	}
+	// let userLang = navigator.language || navigator.userLanguage;
+	// if(localStorage.getItem("lan") === null){
+	// 	localStorage.lan = "en";
+	// 	if (userLang.split('-')[0] == "es")
+	// 		localStorage.lan = "es";
+	// }
 
 	// Maybe first time or not, so load the localStorage value
 	$('<link>').appendTo('head').attr({
@@ -55,10 +55,10 @@ $(document).ready(function(){
 		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
 	}
 	// Done because light is the one by default
-	if(localStorage.lan == "es") {
-		$('#lan img').attr("src","/assets/img/es_flag.webp");
-		$('#lan').addClass("es");
-	}
+	// if(localStorage.lan == "es") {
+	// 	$('#lan img').attr("src","/assets/img/es_flag.webp");
+	// 	$('#lan').addClass("es");
+	// }
 	updateLanguage();
 
 	// Handle 'About Me' content
@@ -317,24 +317,24 @@ $(document).ready(function(){
 	})
 
 	// Animates the lan button + functionality
-	$('#lan').click(function(e) {
-		if(!$(e.currentTarget).hasClass('es')){
-			$(e.currentTarget).addClass('es');
+	// $('#lan').click(function(e) {
+	// 	if(!$(e.currentTarget).hasClass('es')){
+	// 		$(e.currentTarget).addClass('es');
 
-			$('#lan img').attr("src","/assets/img/es_flag.webp");
+	// 		$('#lan img').attr("src","/assets/img/es_flag.webp");
 
-			localStorage.lan = "es"
-		}
-		else {
-			$(e.currentTarget).removeClass('es');
+	// 		localStorage.lan = "es"
+	// 	}
+	// 	else {
+	// 		$(e.currentTarget).removeClass('es');
 
-			$('#lan img').attr("src","/assets/img/en_flag.webp");
+	// 		$('#lan img').attr("src","/assets/img/en_flag.webp");
 
-			localStorage.lan = "en"
-		}
+	// 		localStorage.lan = "en"
+	// 	}
 
-		updateLanguage();
-	})
+	// 	updateLanguage();
+	// })
 
 });
 
@@ -352,7 +352,7 @@ function clearActiveLinks() {
 }
 
 function clearActiveDivs() {
-	$('.container .content .active').each(function() {
+	$('.content .active').each(function() {
 		$(this).removeClass('active');
 		$(this).hide();
 	});
