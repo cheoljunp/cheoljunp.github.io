@@ -57,6 +57,64 @@ li > .active {
 	font-family: 'Georgia';
 }
 
+.indent {
+    margin-left: 20px; /* Adjust the value as needed */
+}
+
+/* Education Related */
+.education-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+	/* border-left: 2px #D9DDDC solid; */
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+.education-item {
+    margin-bottom: 0px; /* Add spacing between items */
+}
+
+.degree {
+    font-weight: bold; /* Make degree bold */
+}
+.degree i {
+    margin-right: 8px; /* Space between icon and text */
+    color: #8a8a8a; /* Change icon color */
+}
+
+.institution {
+    color: rgb(150, 150, 150); /* Change color for better contrast */
+    font-style: italic; /* Italicize institution name */
+}
+
+/* Experience Related */
+.experience-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+	/* border-left: 2px #D9DDDC solid; */
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+.experience-item {
+    margin-bottom: 0px; /* Add spacing between items */
+}
+
+.position {
+    font-weight: bold; /* Make position bold */
+}
+.position i {
+    margin-right: 8px; /* Space between icon and text */
+    color: #8a8a8a; /* Change icon color */
+}
+
+.company {
+    color: rgb(150, 150, 150); /* Change color for better contrast */
+    font-style: italic; /* Italicize company name */
+}
+
+
+
 /* CHEOLJUN PARK CONTACT INFO - Related*/
 .profilepicture {
 	max-height: 280px;
